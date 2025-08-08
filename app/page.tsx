@@ -36,6 +36,16 @@ export default function Home() {
           </div> 
         </div>
       </section>
+      <section className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-3xl md:text4xl font-bold text-blue-700 mb-2">500+</div>
+              <div className="text-gray-600 font-medium">Companies Served</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
