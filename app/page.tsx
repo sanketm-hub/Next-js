@@ -61,12 +61,22 @@ export default function Home() {
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Our Safety Solutions
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                From training and assessment to compliance and emergency planning, we provide comprehensive safety solutions tailored to your business needs.
-              </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Safety Solutions
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              From training and assessment to compliance and emergency planning, we provide comprehensive safety solutions tailored to your business needs.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
+              <div className="text-center pb-4 pt-4">
+                <h5 className="text-xl font-semibold text-gray-900">Safety Training</h5>
+              </div>
+              <div className="text-center pb-4">
+                <p className="text-gray-900">Comprehensive safety training programs tailored to your industry needs.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
