@@ -17,11 +17,11 @@ export default function Home() {
                 Comprehensive safety solutions, training, and compliance services to protect your workforce and ensure regulatory compliance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-8">
-                
-                  <a  href="/contact" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-center">
-                    Get Started Today
-                  </a>
-                
+
+                <a href="/contact" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-center">
+                  Get Started Today
+                </a>
+
                 {/* <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3">
                   Get Started Today
                 </button> */}
@@ -33,7 +33,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
       </section>
       <section className="bg-white py-16">
@@ -42,6 +42,18 @@ export default function Home() {
             <div className="text-center">
               <div className="text-3xl md:text4xl font-bold text-blue-700 mb-2">500+</div>
               <div className="text-gray-600 font-medium">Companies Served</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text4xl font-bold text-blue-700 mb-2">10,000+</div>
+              <div className="text-gray-600 font-medium">Employees Trained</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text4xl font-bold text-blue-700 mb-2">15+</div>
+              <div className="text-gray-600 font-medium">Years Experience</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text4xl font-bold text-blue-700 mb-2">99%</div>
+              <div className="text-gray-600 font-medium">client Satisfication</div>
             </div>
           </div>
         </div>
