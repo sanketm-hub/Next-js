@@ -77,6 +77,32 @@ export default function Home() {
                 <p className="text-gray-900">Comprehensive safety training programs tailored to your industry needs.</p>
               </div>
             </div>
+            <div className="rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
+              <div className="text-center pb-4 pt-4">
+                <h5 className="text-xl font-semibold text-gray-900">Risk Assessment</h5>
+              </div>
+              <div className="text-center pb-4">
+                <p className="text-gray-900">Thorough evaluation of workplace hazards and safety protocols.</p>
+              </div>
+            </div>
+
+            <div className="rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
+              <div className="text-center pb-4 pt-4">
+                <h5 className="text-xl font-semibold text-gray-900">Compliance Auditing</h5>
+              </div>
+              <div className="text-center pb-4">
+                <p className="text-gray-900">Ensure your business meets all safety regulations and standards.</p>
+              </div>
+            </div>
+
+            <div className="rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
+              <div className="text-center pb-4 pt-4">
+                <h5 className="text-xl font-semibold text-gray-900">Emergency Planning</h5>
+              </div>
+              <div className="text-center pb-4">
+                <p className="text-gray-900">Strategic emergency response planning and crisis management.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
