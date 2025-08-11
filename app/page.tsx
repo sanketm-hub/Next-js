@@ -3,6 +3,7 @@ import Image from "./media/Layer_1.svg";
 import ImageLayer2 from "./media/Layer_2.svg";
 import ImageLayer3 from "./media/Layer_3.svg";
 import ImageLayer4 from "./media/Layer_4.svg";
+import RightImage from "./media/pexels-photo-5691630.jpeg"
 import Link from "next/link";
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8">
@@ -62,6 +64,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -133,6 +136,38 @@ export default function Home() {
                   View All Services
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <img src={RightImage.src} alt="Safety Training Session" className="rounded-lg shadow-xl" />
+              </div>
+              <div className="space-y-6">
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                    Why Choose Wynn Safety?
+                  </h2>
+                  <p className="text-lg text-gray-600">
+                    With over 15 years of experience in workplace safety, we've helped hundreds of companies create safer work environments and maintain regulatory compliance.
+                  </p>
+                  <ol className="space-y-4 text-gray-600 list-decimal px-4">
+                    <li className="text-md">
+                      Certified safety professionals with industry expertise
+                    </li>
+                    <li className="text-md">
+                      Customized solutions for your specific industry needs
+                    </li>
+                    <li className="text-md">
+                      24/7 support and emergency response planning
+                    </li>
+                    <li className="text-md">
+                      Proven track record of regulatory compliance
+                    </li>
+                  </ol>
+              </div>
+            </div>      
         </div>
       </section>
     </div>
