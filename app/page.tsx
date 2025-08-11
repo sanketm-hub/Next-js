@@ -1,4 +1,8 @@
 import React from "react";
+import Image from "./media/Layer_1.svg";
+import ImageLayer2 from "./media/Layer_2.svg";
+import ImageLayer3 from "./media/Layer_3.svg";
+import ImageLayer4 from "./media/Layer_4.svg";
 import Link from "next/link";
 
 export default function Home() {
@@ -38,7 +42,7 @@ export default function Home() {
       </section>
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8">
             <div className="text-center">
               <div className="text-3xl md:text4xl font-bold text-blue-700 mb-2">500+</div>
               <div className="text-gray-600 font-medium">Companies Served</div>
@@ -59,7 +63,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Our Safety Solutions
@@ -68,41 +72,66 @@ export default function Home() {
               From training and assessment to compliance and emergency planning, we provide comprehensive safety solutions tailored to your business needs.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
-              <div className="text-center pb-4 pt-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-8 md:gap-4 sm:gap-2">
+            <div className="mt-2 rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-2xl">
+              <div className="text-center mt-4">
+                <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                  <img src={Image.src} alt="layer" />
+                </div>
+              </div>
+              <div className="text-center pb-4">
                 <h5 className="text-xl font-semibold text-gray-900">Safety Training</h5>
               </div>
               <div className="text-center pb-4">
-                <p className="text-gray-900">Comprehensive safety training programs tailored to your industry needs.</p>
+                <p className="text-gray-900 px-4">Comprehensive safety training programs tailored to your industry needs.</p>
               </div>
             </div>
-            <div className="rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
-              <div className="text-center pb-4 pt-4">
+            <div className="mt-2 rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-2xl">
+              <div className="text-center mt-4">
+                <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                  <img src={ImageLayer2.src} alt="layer" />
+                </div>
+              </div>
+              <div className="text-center pb-4">
+                <h5 className="text-xl font-semibold text-gray-900">Compliance Services</h5>
+              </div>
+              <div className="text-center pb-4">
+                <p className="text-gray-900 px-4">Ensure your business meets all safety regulations and standards.</p>
+              </div>
+            </div>
+            <div className="mt-2 rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-2xl">
+              <div className="text-center mt-4">
+                <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                  <img src={ImageLayer3.src} alt="layer" />
+                </div>
+              </div>
+              <div className="text-center pb-4">
                 <h5 className="text-xl font-semibold text-gray-900">Risk Assessment</h5>
               </div>
               <div className="text-center pb-4">
-                <p className="text-gray-900">Thorough evaluation of workplace hazards and safety protocols.</p>
+                <p className="text-gray-900 px-4">Identify and mitigate potential safety risks in your workplace.</p>
               </div>
             </div>
-
-            <div className="rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
-              <div className="text-center pb-4 pt-4">
-                <h5 className="text-xl font-semibold text-gray-900">Compliance Auditing</h5>
+            <div className="mt-2 rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-2xl">
+              <div className="text-center mt-4">
+                <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                  <img src={ImageLayer4.src} alt="layer" />
+                </div>
               </div>
               <div className="text-center pb-4">
-                <p className="text-gray-900">Ensure your business meets all safety regulations and standards.</p>
-              </div>
-            </div>
-
-            <div className="rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
-              <div className="text-center pb-4 pt-4">
                 <h5 className="text-xl font-semibold text-gray-900">Emergency Planning</h5>
               </div>
               <div className="text-center pb-4">
-                <p className="text-gray-900">Strategic emergency response planning and crisis management.</p>
+                <p className="text-gray-900 px-4">Strategic emergency response planning and crisis management.</p>
               </div>
             </div>
+
+          </div>
+
+          <div className="text-center mt-12">
+            <a href="/services" className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3">
+                  View All Services
+            </a>
           </div>
         </div>
       </section>
