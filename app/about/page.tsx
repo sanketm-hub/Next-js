@@ -1,4 +1,5 @@
 import React from 'react';
+
 export default function About() {
     return (
         <div className='min-h-screen'>
@@ -60,10 +61,13 @@ export default function About() {
                     <div className='grid grid-cols1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
                         <div className='text-center rounded-lg border-0 border-b-gray-700 py-8 px-2 shadow-sm hover:shadow-lg transition-shadow duration-300'>
                             <div className='mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
-                                <img className="h-8 w-8 text-blue-700" src="/_next/static/media/Layer_1.svg" alt="" />
+                                <img className="h-8 w-8 text-blue-700" src="/app/media/Layer_1.svg" alt="image1" />
                             </div>
                             <div className='text-center mb-4'>
                                 <h3 className='text-xl font-semibold'> Safety first</h3>
+                            </div>
+                            <div className='text-center'>
+                                <p className='text-gray-600 text-sm'>We prioritize safety above all else, ensuring every solution protects lives and prevents accidents.</p>
                             </div>
                         </div>
                     </div>
