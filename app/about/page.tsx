@@ -53,6 +53,19 @@ export default function About() {
                 <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                     <div className='text-center mb-16'>
                         <h2 className='text-3xl md:4xl font-bold text-gray-900 mb-4'>Our Values</h2>
+                        <p className='text-xl text-gray-600 max-w-3xl mx-auto'>
+                            These core values guide everything we do and shape how we serve our clients.
+                        </p>
+                    </div>
+                    <div className='grid grid-cols1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+                        <div className='text-center rounded-lg border-0 border-b-gray-700 py-8 px-2 shadow-sm hover:shadow-lg transition-shadow duration-300'>
+                            <div className='mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
+                                <img className="h-8 w-8 text-blue-700" src="/_next/static/media/Layer_1.svg" alt="" />
+                            </div>
+                            <div className='text-center mb-4'>
+                                <h3 className='text-xl font-semibold'> Safety first</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
