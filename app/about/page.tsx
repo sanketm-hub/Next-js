@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Image from 'next/image';
+import Layer1 from '../media/Layer_1.svg';
 
 export default function About() {
     return (
@@ -44,8 +45,8 @@ export default function About() {
                             </div>
                         </div>
                         <div>
-                            <img src='/_next/static/media/pexels-photo-5691625.6bc660fe.webp' 
-                            alt="Safety team meeting" className='rounded-lg shadow-xl' />
+                            <img src='/_next/static/media/pexels-photo-5691625.6bc660fe.webp'
+                                alt="Safety team meeting" className='rounded-lg shadow-xl' />
                         </div>
                     </div>
                 </div>
@@ -62,7 +63,8 @@ export default function About() {
                     <div className='grid grid-cols1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
                         <div className='text-center rounded-lg border-0 border-b-gray-700 py-8 px-2 shadow-sm hover:shadow-lg transition-shadow duration-300'>
                             <div className='mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
-                                <img className="h-8 w-8 text-blue-700" src="/_next/static/media/pexels-photo-5691625.6bc660fe.webp" alt="image1" />
+                                {/* <img className="h-8 w-8 text-blue-700" src="/media/Layer_1.svg" alt="image1" /> */}
+                                <Image src={Layer1} alt="Layer 1" className="h-8 w-8 text-blue-700" />                               
                             </div>
                             <div className='text-center mb-4'>
                                 <h3 className='text-xl font-semibold'> Safety first</h3>
