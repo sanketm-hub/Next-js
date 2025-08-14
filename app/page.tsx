@@ -5,7 +5,7 @@ import Safetyimg2 from "./media/Layer_2.svg";
 import Safetyimg3 from "./media/Layer_3.svg";
 import Safetyimg4 from "./media/Layer_4.svg";
 import RightImage from "./media/pexels-photo-5691630.jpeg"
-import Link from "next/link";
+
 
 export default function Home() {
   return (
