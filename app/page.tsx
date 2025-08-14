@@ -1,5 +1,5 @@
 import React from "react";
-import { use, useState } from 'react';
+import { useState } from 'react';
 
 import Image from "next/image";
 import Safetyimg1 from "./media/Layer_1.svg";
