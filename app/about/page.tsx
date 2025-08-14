@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Secimage from '../media/pexels-photo-5691625.webp'; // Adjust the path as necessary
 import Layer1 from '../media/Layer_1.svg';
 
 export default function About() {
@@ -45,8 +46,9 @@ export default function About() {
                             </div>
                         </div>
                         <div>
-                            <img src='/_next/static/media/pexels-photo-5691625.6bc660fe.webp'
-                                alt="Safety team meeting" className='rounded-lg shadow-xl' />
+                            <Image src={Secimage} alt="Safety team meeting" className="rounded-lg shadow-xl" /> 
+                            {/* <img src='/_next/static/media/pexels-photo-5691625.6bc660fe.webp'
+                                alt="Safety team meeting" className='rounded-lg shadow-xl' /> */}
                         </div>
                     </div>
                 </div>
