@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from 'react';
 
 import Image from "next/image";
 import Safetyimg1 from "./media/Layer_1.svg";
@@ -158,7 +157,7 @@ export default function Home() {
                     Why Choose Wynn Safety?
                   </h2>
                   <p className="text-lg text-gray-600">
-                    With over 15 years of experience in workplace safety, we've helped hundreds of companies create safer work environments and maintain regulatory compliance.
+                    With over 15 years of experience in workplace safety, we have helped hundreds of companies create safer work environments and maintain regulatory compliance.
                   </p>
                   <ol className="space-y-4 text-gray-600 list-decimal px-4">
                     <li className="text-md">
