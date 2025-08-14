@@ -1,8 +1,9 @@
 import React from "react";
-import Image from "./media/Layer_1.svg";
-import ImageLayer2 from "./media/Layer_2.svg";
-import ImageLayer3 from "./media/Layer_3.svg";
-import ImageLayer4 from "./media/Layer_4.svg";
+import Image from "next/image";
+import Safetyimg1 from "./media/Layer_1.svg";
+import Safetyimg2 from "./media/Layer_2.svg";
+import Safetyimg3 from "./media/Layer_3.svg";
+import Safetyimg4 from "./media/Layer_4.svg";
 import RightImage from "./media/pexels-photo-5691630.jpeg"
 import Link from "next/link";
 
@@ -16,7 +17,7 @@ export default function Home() {
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold">
                 Your Partner in
-                <span className="text-orange-400">Workplace Safety</span>
+                <span className="text-orange-400"> Workplace Safety</span>
               </h1>
               <p className="text-xl text-blue-100 leading-relaxed">
                 Comprehensive safety solutions, training, and compliance services to protect your workforce and ensure regulatory compliance.
@@ -79,7 +80,8 @@ export default function Home() {
             <div className="mt-2 rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-2xl">
               <div className="text-center mt-4">
                 <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <img src={Image.src} alt="layer" />
+                  {/* <img src={Image.src} alt="layer" /> */}
+                  <Image src={Safetyimg1} alt="Layer1" />
                 </div>
               </div>
               <div className="text-center pb-4">
@@ -92,7 +94,8 @@ export default function Home() {
             <div className="mt-2 rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-2xl">
               <div className="text-center mt-4">
                 <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <img src={ImageLayer2.src} alt="layer" />
+                  {/* <img src={ImageLayer2.src} alt="layer" /> */}
+                  <Image src={Safetyimg2} alt="layer2" />
                 </div>
               </div>
               <div className="text-center pb-4">
@@ -105,7 +108,8 @@ export default function Home() {
             <div className="mt-2 rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-2xl">
               <div className="text-center mt-4">
                 <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <img src={ImageLayer3.src} alt="layer" />
+                  {/* <img src={ImageLayer3.src} alt="layer" /> */}
+                  <Image src={Safetyimg3} alt="layer3" />
                 </div>
               </div>
               <div className="text-center pb-4">
@@ -118,7 +122,8 @@ export default function Home() {
             <div className="mt-2 rounded-lg bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300 border-0 shadow-2xl">
               <div className="text-center mt-4">
                 <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <img src={ImageLayer4.src} alt="layer" />
+                  {/* <img src={ImageLayer4.src} alt="layer" /> */}
+                  <Image src={Safetyimg4} alt="layer4" />
                 </div>
               </div>
               <div className="text-center pb-4">
@@ -143,7 +148,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
-                <img src={RightImage.src} alt="Safety Training Session" className="rounded-lg shadow-xl" />
+                {/* <img src={RightImage.src} alt="Safety Training Session" className="rounded-lg shadow-xl" /> */}
+                <Image alt="Safety Training Session" src={RightImage} className="rounded-lg shadow-xl" />
               </div>
               <div className="space-y-6">
                   <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
