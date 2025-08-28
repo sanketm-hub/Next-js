@@ -14,6 +14,28 @@ export default function Services() {
                     </div>
                 </div>
             </section>
+
+
+            <section className="bg-blue-700 py-16 text-white">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+                    <div className="mx-w-3xl mx-auto space-y-6">
+                        <h2 className="text-3xl md:text-4xl font-bold">
+                            Ready to Improve Your Workplace Safety?
+                        </h2>
+                        <p className="text-xl text-blue-100">
+                            Get a free consultation and learn how we can help protect your workforce and ensure compliance.
+                        </p>
+                        <div className="flex flex-col sm:flex-row justify-center gap-4">
+                            <a href="/contact" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3">
+                                Get Free Consultation
+                            </a>
+                            <a href="#" className="border-white bg-white text-black px-8 py-3 hover:bg-orange-600 border-orange hover:text-white transition-colors">
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
