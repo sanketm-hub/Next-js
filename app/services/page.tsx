@@ -27,7 +27,36 @@ export default function Services() {
                         </p>
                     </div>
                     <div className='grid grid-cols-2 md:grid-cols-5 gap-6'>
-                    
+                        <div className='bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center'>
+                            <h3 className='text-lg font-semibold text-gray-900'>Construction & Building</h3>
+                        </div>
+                        <div className='bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center'>
+                            <h3 className='text-lg font-semibold text-gray-900'>Manufacturing</h3>
+                        </div>
+                        <div className='bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center'>
+                            <h3 className='text-lg font-semibold text-gray-900'>Healthcare</h3>
+                        </div>
+                        <div className='bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center'>
+                            <h3 className='text-lg font-semibold text-gray-900'>Oil & Gas</h3>
+                        </div>
+                        <div className='bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center'>
+                            <h3 className='text-lg font-semibold text-gray-900'>Transportation & Logistics</h3>
+                        </div>
+                        <div className='bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center'>
+                            <h3 className='text-lg font-semibold text-gray-900'>Retail & Warehousing</h3>
+                        </div>
+                        <div className='bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center'>
+                            <h3 className='text-lg font-semibold text-gray-900'>Education</h3>
+                        </div>
+                        <div className='bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center'>
+                            <h3 className='text-lg font-semibold text-gray-900'>Hospitality</h3>
+                        </div>
+                        <div className='bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center'>
+                            <h3 className='text-lg font-semibold text-gray-900'>Government & Public Sector</h3>
+                        </div>
+                        <div className='bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center'>
+                            <h3 className='text-lg font-semibold text-gray-900'>Energy & Utilities</h3>
+                        </div>
                     </div>
                 </div>
             </section>
