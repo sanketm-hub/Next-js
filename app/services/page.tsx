@@ -15,6 +15,22 @@ export default function Services() {
                 </div>
             </section>
 
+            <section className='bg-gray-50 py-20'>
+                <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 '>
+                    <div className='text-center mb-16'>
+                        <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
+                            Industries We Serve
+                        </h2>
+                        <p className='text-xl text-gray-600 max-w-3xl mx-auto'>
+                            Our safety experts have experience across a wide range of industries,
+                            allowing us to provide specialized solutions for your specific sector.
+                        </p>
+                    </div>
+                    <div className='grid grid-cols-2 md:grid-cols-5 gap-6'>
+                    
+                    </div>
+                </div>
+            </section>
 
             <section className="bg-blue-700 py-16 text-white">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
