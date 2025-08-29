@@ -60,9 +60,46 @@ export default function Services() {
                     </div>
                 </div>
             </section>
+            <section className="bg-white py-20">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Process</h2>
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                            We follow a systematic approach to ensure the most effective safety solutions for your organization.
+                        </p>
+                    </div>
 
-            <section>
-                
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div className="text-center">
+                            <div className="w-16 h-16 bg-blue-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                                1
+                            </div>
+                            <h3 className="text-xl font-semibold mb-2">Assessment</h3>
+                            <p className="text-gray-600">We evaluate your current safety practices and identify areas for improvement.</p>
+                        </div>
+                        <div className="text-center">
+                            <div className="w-16 h-16 bg-blue-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                                2
+                            </div>
+                            <h3 className="text-xl font-semibold mb-2">Planning</h3>
+                            <p className="text-gray-600">We develop a customized safety solution plan tailored to your needs.</p>
+                        </div>
+                        <div className="text-center">
+                            <div className="w-16 h-16 bg-blue-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                                3
+                            </div>
+                            <h3 className="text-xl font-semibold mb-2">Implementation</h3>
+                            <p className="text-gray-600">We execute the plan with training, documentation, and system setup.</p>
+                        </div>
+                        <div className="text-center">
+                            <div className="w-16 h-16 bg-blue-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                                4
+                            </div>
+                            <h3 className="text-xl font-semibold mb-2">Support</h3>
+                            <p className="text-gray-600">We provide ongoing support and continuous improvement guidance.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section className="bg-blue-700 py-16 text-white">
