@@ -15,11 +15,13 @@ export default function Contact() {
                 </div>
             </section>
             <section className='bg-white py-20'>
+                <div className='max-w-2xl mx-auto px-4 sm:px-6 lg:px-8'>
                    <div className='bg-white rounded-lg shadow-xl p-8'>
-                        <h2 className='text-2xl font-bold text-gray-900 txt-center mb-8'>
+                        <h2 className='text-2xl font-bold text-gray-900 text-center mb-8'>
                             Send Us A Message
                         </h2>
                     </div> 
+                </div>
             </section>
         </div>
     );
