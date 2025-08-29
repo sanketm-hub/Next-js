@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Contact() {
     return (
@@ -13,6 +13,13 @@ export default function Contact() {
                         </p>
                     </div>
                 </div>
+            </section>
+            <section className='bg-white py-20'>
+                   <div className='bg-white rounded-lg shadow-xl p-8'>
+                        <h2 className='text-2xl font-bold text-gray-900 txt-center mb-8'>
+                            Send Us A Message
+                        </h2>
+                    </div> 
             </section>
         </div>
     );
