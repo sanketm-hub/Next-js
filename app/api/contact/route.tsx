@@ -9,7 +9,7 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST, // ✅ FIXED (no quotes)
       port: Number(process.env.SMTP_PORT),
-      secure: process.env.SMTP_PORT === "465", // true if 465, false if 587
+      secure: false, // true if 465, false if 587
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
