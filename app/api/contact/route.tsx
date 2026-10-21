@@ -72,7 +72,7 @@ export async function POST(req: Request) {
       emailSent = true;
       await Contact.findByIdAndUpdate(saved._id, { emailSent: true });
     } catch (mailError) {
-      // The message is already saved, so log the error but don't fail the request
+      // Message is already saved, so log the error but don't fail the request
       console.error("❌ Email error:", mailError);
     }
 
@@ -87,20 +87,15 @@ export async function POST(req: Request) {
       {
         success: false,
         message: "Failed to process your message.",
-        debug: error instanceof Error ? error.message : String(error),
+        // Shown in local and Preview only, hidden in Production
+        debug:
+          process.env.VERCEL_ENV === "production"
+            ? undefined
+            : error instanceof Error
+            ? error.message
+            : String(error),
       },
       { status: 500 }
     );
-  }
-}
-
-// Handy for testing: open /api/contact in the browser
-export async function GET() {
-  try {
-    await connectDB();
-    const items = await Contact.find().sort({ createdAt: -1 });
-    return NextResponse.json(items);
-  } catch (error) {
-    return NextResponse.json({ error: "Server error" }, { status: 500 });
   }
 }

@@ -27,17 +27,29 @@ export default function Contact() {
         body: JSON.stringify(formData),
       });
 
-      const data = await res.json();
+      // Safe parse: the server might return a non-JSON error page
+      let data: { success?: boolean; message?: string; debug?: string } = {};
+      try {
+        data = await res.json();
+      } catch {
+        data = { success: false, message: `Server error (${res.status})` };
+      }
 
-      if (data.success) {
+      if (res.ok && data.success) {
         alert("✅ Message sent successfully!");
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
-        alert("❌ Failed to send message.");
+        // debug is only returned outside Production
+        console.error("API error:", data.debug || data.message);
+        alert(
+          `❌ Failed to send message.${
+            data.debug ? `\n\nDetails: ${data.debug}` : ""
+          }`
+        );
       }
     } catch (err) {
       console.error(err);
-      alert("⚠️ Something went wrong. Try again.");
+      alert("⚠️ Something went wrong. Check your connection and try again.");
     } finally {
       setLoading(false);
     }
@@ -45,7 +57,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen relative">
-      {/* 🔥 Full-page Overlay Loader */}
+      {/* Full-page Overlay Loader */}
       {loading && (
         <div className="fixed inset-0 bg-white/70 backdrop-blur-sm flex flex-col items-center justify-center z-50">
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-600 mb-4"></div>
