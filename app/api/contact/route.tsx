@@ -11,13 +11,40 @@ const escapeHtml = (str: string = "") =>
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
 
+const NAME_REGEX = /^[A-Za-z][A-Za-z\s.'-]{1,99}$/;
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/;
+const PHONE_REGEX = /^\d{10}$/;
+
 export async function POST(req: Request) {
   try {
-    const { name, email, phone, message } = await req.json();
+    const body = await req.json();
+    const name = String(body.name ?? "").trim();
+    const email = String(body.email ?? "").trim();
+    const phone = String(body.phone ?? "").trim();
+    const message = String(body.message ?? "").trim();
 
-    if (!name || !email) {
+    // Server-side validation (the browser checks can be bypassed)
+    if (!NAME_REGEX.test(name)) {
       return NextResponse.json(
-        { success: false, message: "Name and email are required." },
+        { success: false, message: "Please enter a valid name (letters only)." },
+        { status: 400 }
+      );
+    }
+    if (!EMAIL_REGEX.test(email)) {
+      return NextResponse.json(
+        { success: false, message: "Please enter a valid email address." },
+        { status: 400 }
+      );
+    }
+    if (phone && !PHONE_REGEX.test(phone)) {
+      return NextResponse.json(
+        { success: false, message: "Phone number must be exactly 10 digits." },
+        { status: 400 }
+      );
+    }
+    if (message.length > 2000) {
+      return NextResponse.json(
+        { success: false, message: "Message is too long (max 2000 characters)." },
         { status: 400 }
       );
     }
@@ -52,7 +79,7 @@ export async function POST(req: Request) {
           <p><b>Name:</b> ${escapeHtml(name)}</p>
           <p><b>Email:</b> ${escapeHtml(email)}</p>
           <p><b>Phone:</b> ${escapeHtml(phone) || "N/A"}</p>
-          <p><b>Message:</b> ${escapeHtml(message)}</p>
+          <p><b>Message:</b> ${escapeHtml(message) || "N/A"}</p>
         `,
       });
 
@@ -72,7 +99,7 @@ export async function POST(req: Request) {
       emailSent = true;
       await Contact.findByIdAndUpdate(saved._id, { emailSent: true });
     } catch (mailError) {
-      // The message is already saved, so log the error but don't fail the request
+      // Message is already saved, so log the error but don't fail the request
       console.error("❌ Email error:", mailError);
     }
 
@@ -84,19 +111,18 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error("❌ Contact API error:", error);
     return NextResponse.json(
-      { success: false, message: "Failed to process your message." },
+      {
+        success: false,
+        message: "Failed to process your message. Please try again.",
+        // Shown in local and Preview only, hidden in Production
+        debug:
+          process.env.VERCEL_ENV === "production"
+            ? undefined
+            : error instanceof Error
+            ? error.message
+            : String(error),
+      },
       { status: 500 }
     );
-  }
-}
-
-// Handy for testing: open /api/contact in the browser
-export async function GET() {
-  try {
-    await connectDB();
-    const items = await Contact.find().sort({ createdAt: -1 });
-    return NextResponse.json(items);
-  } catch (error) {
-    return NextResponse.json({ error: "Server error" }, { status: 500 });
   }
 }
